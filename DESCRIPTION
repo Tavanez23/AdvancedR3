@@ -3,6 +3,12 @@ Title: "Learning R"
 Type: Project
 Version: 0.0.1
 Imports:
+    fs,
+    here,
     knitr,
-    rmarkdown
+    readr,
+    rmarkdown,
+    snakecase,
+    stringr,
+    usethis
 Encoding: UTF-8
