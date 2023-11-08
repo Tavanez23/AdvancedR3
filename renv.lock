@@ -1,7 +1,7 @@
 {
   "R": {
     "Version": "4.2.1",
-    "Repositories": [
+    "Repositories": [data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAWElEQVR42mNgGPTAxsZmJsVqQApgmGw1yApwKcQiT7phRBuCzzCSDSHGMKINIeDNmWQlA2IigKJwIssQkHdINgxfmBBtGDEBS3KCxBc7pMQgMYE5c/AXPwAwSX4lV3pTWwAAAABJRU5ErkJggg==
       {
         "Name": "CRAN",
         "URL": "https://packagemanager.posit.co/cran/latest"
