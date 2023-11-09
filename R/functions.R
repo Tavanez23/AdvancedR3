@@ -7,5 +7,5 @@ descriptive_stats <- function(data) {
     data %>%
         dplyr::group_by(metabolite) %>%
         dplyr::summarise(across(value,list(mean = mean, sd = sd))) %>%
-        mutate(across(where(is.numeric), ~round(.x, digits = 1)))
+        dplyr::mutate(across(tidyselect::where(is.numeric), ~round(.x, digits = 1)))
 }
