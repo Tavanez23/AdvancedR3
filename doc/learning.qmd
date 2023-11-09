@@ -1,6 +1,6 @@
 ---
 title: "Draft Quarto document"
-author: "Your Name"
+author: "Ana Tavanez"
 format: html
 editor: 
     markdown: 
@@ -10,15 +10,35 @@ execute:
   echo: true
 ---
 
-## Header 1
+## Setup
 
 ```{r setup}
-#| include: false
-knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+source(here::here("R/functions.R"))
+lipidomics <- read_csv(here::here("data/lipidomics.csv"))
+```
+
+## Basic statistics
+
+```{r basic-stats}
+lipidomics %>% 
+    group_by(metabolite) %>% 
+    summarise(across(value,list(mean = mean, sd = sd))) %>% 
+    mutate(across(where(is.numeric), ~round(.x, digits = 1)))
 ```
 
 ```{r}
-# Code chunk
+#' Descriptive stats
+#'
+#' @param data 
+#'
+#' @return A data.frame/tibble.
+descriptive_stats <- function(data) {
+    data %>% 
+        dplyr::group_by(metabolite) %>% 
+        dplyr::summarise(across(value,list(mean = mean, sd = sd))) %>% 
+        mutate(across(where(is.numeric), ~round(.x, digits = 1)))
+}
 ```
 
 ## This is poorly formatted
