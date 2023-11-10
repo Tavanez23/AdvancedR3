@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|534ffb95c630748f|||||||||||||||
+.Random.seed|object|47de0229cef21181|||||||||||||||
 add_original_metabolite_names|function|ab21d023df5da19e|||||||||||||||
 calculate_estimates|function|82e7887c386cb1b2|||||||||||||||
 column_values_to_snake_case|function|074e817e19db405b|||||||||||||||
@@ -9,11 +9,13 @@ descriptive_stats|function|9a85e71cfe3cdcea|||||||||||||||
 df_model_estimates|stem|96e4325a5af21638|c54121e4cf891739|57b2b0e4d14de679|694756191||t19671.3896583974s|dff923d388a70b81|856|rds|local|vector|||0.85|glm.fit algorithm did not converge. glm.fit fitted probabilities numerically 0 or 1 occurred. glm.fit fitted probabilities numerically 0 or 1 occurred|
 df_stats_by_metabolite|stem|713e1ecc8c2b1d36|06bc50c38cf95e77|e0d6fe9b8df4e026|1571712024||t19670.3749344525s|bee34feafdb8a59e|404|rds|local|vector|||0.12||
 fig_metabolite_distribution|stem|01d11f2f80484b8b|fab028a148ebe7e6|93b0bdcf4b8f1b36|1263992679||t19670.4245107593s|7d5584c327ce3e3e|83706|rds|local|vector|||0||
+fig_model_estimates|stem|86378e1fec0c083b|16a1b6385d9d61a3|caaecd5a6282847d|1462996731||t19671.4216463213s|8c2ca5e41a7822dc|53275|rds|local|vector|||0||
 file|stem|301125be9d4645ea|41619bbc02c4928d|ef46db3751d8e999|-1301001980|C:/Users/ana_r/Documents/AdvancedR3/data/lipidomics.csv|t19652.3236137382s|6f631a918b070454|24313|file|local|vector|||0.02|package tibble was built under R version 4.2.3|
 generate_model_results|function|6a9305f91da0e052|||||||||||||||
 lipidomics|stem|387f826a12005c9a|7940706ee8ea8eb8|74cf55e34db4cd4e|-1170387675||t19670.3900494177s|30e7dd23cf8c9239|4884|rds|local|vector|||0.13||
 metabolites_to_wider|function|8eff1105ed5e7f18|||||||||||||||
 plot_distributions|function|f02ad1ee39314fc6|||||||||||||||
-quarto_doc|stem|041c84d6c30785cc|d3457f74e24f7da9|d3adbcd303b9f4b0|1886859688|doc/learning.html*doc/learning.qmd|t19671.3897475713s|ecbda89a3acc568b|69050|file|local|vector|||7.72||
+plot_estimates|function|e710467c98dca542|||||||||||||||
+quarto_doc|stem|548aa0daf3e408e2|7501c14284a43c0a|d0f1343161152024|1886859688|doc/learning.html*doc/learning.qmd|t19671.4217269108s|a24d04d5dda3377b|36591|file|local|vector|||6.97||
 split_by_metabolite|function|f1349c9b4e474061|||||||||||||||
 tidy_model_output|function|4ff0d9127acce476|||||||||||||||

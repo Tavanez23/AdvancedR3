@@ -156,3 +156,19 @@ metabolites_to_wider <- function(data) {
         )
 }
 
+#' Plot the estimates and standard errors of the model results.
+#'
+#' @param results The model estimate results
+#'
+#' @return A gg2 plot figure
+plot_estimates <- function(results) {
+    results %>%
+        ggplot2::ggplot(ggplot2::aes(
+            x = estimate,
+            y = metabolite,
+            xmin = estimate - std.error,
+            xmax = estimate + std.error
+        )) +
+        ggplot2::geom_pointrange() +
+        ggplot2::coord_fixed(xlim = c(0, 5))
+}

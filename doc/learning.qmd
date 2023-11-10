@@ -56,3 +56,17 @@ lipidomics %>%
   distinct(term, metabolite) %>%
   right_join(model_estimates, by = "term")
 ```
+
+## Figure of model estimates
+
+```{r}
+model_estimates <- tar_read(df_model_estimates)
+```
+
+```{r}
+tar_read(fig_model_estimates)
+```
+
+```{r}
+
+```
