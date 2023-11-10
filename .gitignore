@@ -3,6 +3,8 @@
 .RData
 .Ruserdata
 data-raw/nmr-omics/
- 
- 
-                        .Rbuildignore
+
+
+.Rbuildignore
+
+/.quarto/
