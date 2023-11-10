@@ -1,6 +1,14 @@
 ---
 title: "Draft Quarto document"
-author: "Ana Tavanez"
+author: 
+  - name: "Ana Tavanez"
+    orcid: 0000-0001-9336-8274
+    email: anaritatavanez@gmail.com
+    affiliations:
+      - name: SDU
+        address: Odense 
+        city: Odense C
+        postal-code: 5000
 format: html
 editor: 
     markdown: 
